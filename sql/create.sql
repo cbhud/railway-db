@@ -255,7 +255,6 @@ CREATE INDEX idx_run_departure_time ON train_run(departure_time);
 CREATE INDEX idx_run_route_time ON train_run(route_id, departure_time);
 
 CREATE INDEX idx_ticket_run ON ticket(run_id);
-CREATE INDEX idx_ticket_sold_at ON ticket(sold_at);
 
 CREATE INDEX idx_payment_paid_at ON payment(paid_at);
 CREATE INDEX idx_audit_table_time ON audit_log(table_name, changed_at DESC);
